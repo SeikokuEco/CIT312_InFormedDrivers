@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Finders Inc - In-formed Drivers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Ideal Car
+                <img src="rundown-vehicle-namibia-lonely-r-cropped-2.png">
+            </h1>
+            
+        </header>
+        
+        <!-- 	
+            manufacturer, as a select field
+
+            colour, as colour field
+
+            drive options (4 wheel etc) as check boxes
+
+            license, as text
+
+            comments, as text area
+
+            choice of at least 2 additional field categories
+        -->
+
+        <div>
+            <form id="carBuilder" action="#" method="get">
+
+                <fieldset>
+                    <legend>Manufacturer</legend>
+                    <label for="manufacturer">Select Manufacturer</label>
+                    <select required>
+                        <!-- https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box?page=1&tab=scoredesc#tab-top -->
+                        <option value="" disabled selected hidden>Select Manufacturer</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="ford">Ford</option>
+                    </select>
+
+                    <br>
+                </fieldset>
+
+                <!-- Car Colour -->
+                <fieldset>
+                    <legend>Colour Your Car</legend>
+
+                    <label for="ex-colour">Select Exterior Colour</label>
+                    <input type="color" id="ex-colourOption" name="ex-colourOption">
+
+                    <br>
+
+                    <label for="in-colour">Select Interior Colour</label>
+                    <input type="color" id="in-colourOption" name="in-colourOption">
+                    
+                    <br>
+                </fieldset>
+
+                <!-- Drive Trains -->
+                <fieldset>
+                    <legend>Drive Train</legend>
+
+                    <label for="fwd">Front Wheel Drive</label>
+                    <input type="checkbox" id="fwd" value="fwd" name="driveTrain" checked>
+                    <br>
+                    <label for="awd">All Wheel Drive</label>
+                    <input type="checkbox" id="awd" value="awd" name="driveTrain">
+                    <br>
+                    <label for="4wd">Four Wheel Drive</label>
+                    <input type="checkbox" id="4wd" value="4wd" name="driveTrain">
+
+                    <br>
+                </fieldset>
+                
+                <!-- License -->
+                <fieldset>
+                    <legend>License</legend>
+                    <label for="license">Enter License Plate</label> <br>
+                    <input
+                        type="text"
+                        id="license"
+                        name="license"
+                        placeholder="license plate number"
+                        size="25"
+                        required
+                        minlength="1"
+                        maxlength="60"
+                    />
+
+                    <br>
+                </fieldset>
+
+                <!-- Additional Accessories -->
+                <!-- I really just wanted to use radio options -->
+                <fieldset>
+                    <legend>Accessories</legend>
+
+                    <label for="floorMats">All-Weather Floor Mats</label> <br>
+                    <label for="floorMatYes">Yes</label>
+                    <input type="radio" id="floorMatYes" name="floorMats" value="floorMatYes" required>
+                    <label for="floorMatNo">No</label>
+                    <input type="radio" id="floorMatNo" name="floorMats" value="floorMatNo"> <br>
+
+
+                    <label for="panoramicViewMonitor">Panoramic View Monitor</label> <br>
+                    <label for="panoramicViewMonitorYes">Yes</label>
+                    <input type="radio" id="panoramicViewMonitorYes" name="panoramicViewMonitor" value="panoramicViewMonitorYes" required>
+                    <label for="panoramicViewMonitorNo">No</label>
+                    <input type="radio" id="panoramicViewMonitorNo" name="panoramicViewMonitor" value="panoramicViewMonitorNo"> <br>                </fieldset>
+
+                <!-- Comments -->
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <label for="comments">Enter Any Additional Comments </label> <br>
+                    <textarea name="comments" id="comments" placeholder="Additional Comment blah blah blah"></textarea>
+
+                    <br>
+                </fieldset>
+
+                <label for="submit">Submit Your Customizations</label>
+                <input type="submit" id="process" />
+            </form>
+        </div>
+        <br><br>
+        <footer>Car Finders Inc.</footer>
+
+    </div>
+
+</body>
+</html>

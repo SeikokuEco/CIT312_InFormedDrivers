@@ -1,0 +1,44 @@
+.container {
+
+    display: inline-block;
+  
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 img {
+    height: 80px;
+    /* width: 21vw; */
+    vertical-align: middle;
+}
+
+
+input, select, textarea, button, label {
+
+    font-family: inherit;
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+label {
+    display: inline-block;
+    width: inherit;
+}
+
+footer {
+
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    background: beige;
+
+}
